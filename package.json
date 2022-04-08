@@ -1,7 +1,9 @@
 {
-  "name": "keyboard-viewer",
+  "name": "threejs_with_vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "My template for quick and little project using Three.js and Vite.js",
+  "repository": "Sedatyf/Threejs_with_Vite",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
