@@ -1,6 +1,7 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import * as lil from 'lil-gui';
 
 /**
  * Base
@@ -70,6 +71,15 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+/**
+ * Debug
+ */
+const gui = new lil.GUI();
+gui.add(mesh.position, 'x').name('pos x');
+gui.add(mesh.position, 'y').name('pos y');
+gui.add(mesh.position, 'z').name('pos z');
+gui.add(mesh, 'visible');
 
 /**
  * Animate
